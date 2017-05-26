@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="HappyMenu" content="Landing page for the HappyMenu app" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rl="Stylesheet" type="text/css" href="HappyMenuStyles.css">
+	<script>
+	$(".about").hover(function() {
+$('.hero').fadeOut();
+} else {
+$('.hero').fadeIn();
+});
+	</script>
+</head>
+	<style>
+
+		*{
+			box-sizing: border-box;
+		}
+		section {
+			width: 100%;
+			overflow: hidden;
+		}
+		.fullheight {
+  		height: 100vh;
+  		min-height: 500px;
+		}
+		body{
+			width: 100vw;
+  		margin:0px;
+		}
+
+		nav {
+			height: 68px;
+			width: 100vw;
+			border: 1px solid #979797;
+			background-color: rgba(0,67,88,.6);
+			position: fixed;
+  		top: 0px;
+  		z-index:9999;
+		}
+
+
+
+		.navcontent {
+	  width: 40%;
+	  min-width: 375px;
+	  float: right;
+		transition-property: color;
+		transition-duration: .2s;
+		transition-timing-function: ease-in-out;
+	}
+
+	div.navcontent ul > li{
+	  display: inline;
+	  float: left;
+	  color: white;
+	}
+
+	div.navcontent ul > li > a{
+	  color: white;
+	  padding: 5px 20px 0px 10px;
+	  text-transform: uppercase;
+	  text-decoration: none;
+	  font-size: 18px;
+	}
+	div.navcontent ul > li > a:hover{
+		color: yellow;
+	}
+	div.navcontent ul > li > a:active{
+		color: #ff5500;
+	}
+
+.clear{
+	clear: both;
+}
+	.logo{
+		height: 189px;
+		width: 220px;
+		margin-top: 6px;
+		margin-left: 50px;
+	}
+
+		.heromessage{
+			width: 50%;
+			position: relative;
+			margin: 10% 15% 10% 25%;
+			text-align: center;
+		}
+		.hero {
+			text-align: center;
+			height: 810px;
+			width: 100vw;
+			background-image: url(/Users/jvntr/Documents/Stylesheet/041614-lifestyle-dinner-party-friends-wine-mixed-race.jpg.png);
+    	margin: auto;
+    	background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-color: rgba(0,67,88,.4);
+			background-blend-mode: overlay;
+			z-index: 9998;
+		}
+		.hero h1{
+			color: #FFFFFF;
+			font-family: "HBM Serenity";
+			font-size: 95px;
+			font-weight: bold;
+			letter-spacing: 8px;
+			line-height: 110px;
+			text-align: center;
+			text-shadow:1px 1px 0 rgba(0,67,88,.4),
+				-1px 1px 0 rgba(0,67,88,.4),
+				1px -1px 0 rgba(0,67,88,.4),
+				-1px -1px 0 rgba(0,67,88,.4),
+				0px 1px 0 rgba(0,67,88,.4),
+				0px -1px 0 rgba(0,67,88,.4),
+				-1px 0px 0 rgba(0,67,88,.4),
+				1px 0px 0 rgba(0,67,88,.4),
+				2px 2px 0 rgba(0,67,88,.4),
+				-2px 2px 0 rgba(0,67,88,.4),
+				2px -2px 0 rgba(0,67,88,.4),
+				-2px -2px 0 rgba(0,67,88,.4),
+				0px 2px 0 rgba(0,67,88,.4),
+				0px -2px 0 rgba(0,67,88,.4),
+				-2px 0px 0 rgba(0,67,88,.4),
+				2px 0px 0 rgba(0,67,88,.4),
+				1px 2px 0 rgba(0,67,88,.4),
+				-1px 2px 0 rgba(0,67,88,.4),
+				1px -2px 0 rgba(0,67,88,.4),
+				-1px -2px 0 rgba(0,67,88,.4),
+				2px 1px 0 rgba(0,67,88,.4),
+				-2px 1px 0 rgba(0,67,88,.4),
+				2px -1px 0 rgba(0,67,88,.4),
+				-2px -1px 0 rgba(0,67,88,.4);
+		}
+
+
+		.hero button{
+			height: 59px;
+			width: 340px;
+			border: 1px solid #979797;
+			border-radius: 39px;
+			background: rgba(0,0,0,1);
+			box-shadow: 3px 3px 3px .2 rgba(0,0,0,0.5);
+    	font-size: 24px;
+	    font-family: Baskerville;
+    	color: white;
+
+			transition-property: background;
+			transition-duration: .2s;
+			transition-timing-function: ease;
+		}
+
+		.hero button:hover{
+			background: #ff5500;
+		}
+		.hero button:active{
+			background: #000;
+		}
+		#headerdownloadbutton img{
+			height: 184px;
+			width: 250px;
+		}
+		#headerdownloadbutton{
+			margin-top: 35%;
+			margin-left: -15%;
+		}
+		.hero h2{
+			color: #FFFFFF;
+			font-family: Baskerville;
+			font-size: 36px;
+			font-weight: 600;
+			line-height: 41px;
+			text-align: center;
+			padding-top: 10%;
+			padding-bottom: 5%;
+			text-shadow: 1px 1px 0 rgba(0,67,88,.2),
+				-1px 1px 0 rgba(0,67,88,.2),
+				1px -1px 0 rgba(0,67,88,.2),
+				-1px -1px 0 rgba(0,67,88,.2),
+				0px 1px 0 rgba(0,67,88,.2),
+				0px -1px 0 rgba(0,67,88,.2),
+				-1px 0px 0 rgba(0,67,88,.2),
+				1px 0px 0 rgba(0,67,88,.2),
+				2px 2px 0 rgba(0,67,88,.2),
+				-2px 2px 0 rgba(0,67,88,.2),
+				2px -2px 0 rgba(0,67,88,.2),
+				-2px -2px 0 rgba(0,67,88,.2),
+				0px 2px 0 rgba(0,67,88,.2),
+				0px -2px 0 rgba(0,67,88,.2),
+				-2px 0px 0 rgba(0,67,88,.2),
+				2px 0px 0 rgba(0,67,88,.2),
+				1px 2px 0 rgba(0,67,88,.2),
+				-1px 2px 0 rgba(0,67,88,.2),
+				1px -2px 0 rgba(0,67,88,.2),
+				-1px -2px 0 rgba(0,67,88,.2),
+				2px 1px 0 rgba(0,67,88,.2),
+				-2px 1px 0 rgba(0,67,88,.2),
+				2px -1px 0 rgba(0,67,88,.2),
+				-2px -1px 0 rgba(0,67,88,.2);
+		}
+		.hero{
+			position: relative;
+		}
+
+
+		#go-top{
+
+			width: 100%;
+			height: 8%;
+			z-index: 9997;
+		}
+		#go-top img{
+			width: 3%;
+			height: 8%;
+			top: 80px;
+			opacity: .8;
+			position: fixed;
+			left: 0px;
+			z-index: 9997;
+		}
+
+
+		.about{
+			height: 1024px;
+			width: 100vw;
+			margin:auto;
+			background-size: 100%;
+			display:inline-block;
+		}
+			.title{
+				width: 100%;
+				height: 350px;
+				position: relative;
+				margin: 0% 25% 5% 25%;
+				text-align: center;
+				text-align: center;
+			}
+			.title h1{
+				color: #004358;
+				font-family: "HBM Serenity";
+				font-size: 80px;
+				font-weight: bold;
+				letter-spacing: 8px;
+				line-height: 110px;
+				margin-top: 1%;
+				}
+			.title h2{
+				color: #000000;
+				font-family: Baskerville;
+				font-size: 24px;
+				font-weight: 600;
+				line-height: 34px;
+				text-align: center;
+				padding-bottom: 10%;
+			}
+			.dieticons img{
+				height: 336px;
+				width: 558px;
+				margin-left: 10%;
+				margin-top: -4%;
+			}
+			.dieticons{
+				width: 40%;
+				float: left;
+				margin-left: 5%;
+			}
+			.descriptions {
+				width: 50%;
+				float: right;
+				margin-left: 5%;
+				margin-top: -1%;
+
+			}
+			.descriptions h3{
+				clear:both;
+				display: block;
+				color: #000000;
+				font-family: Baskerville;
+				font-size: 24px;
+				font-weight: 600;
+				letter-spacing: 2px;
+				line-height: 28px;
+				margin-right: 20%;
+			}
+
+
+				.descriptions h3 > a:link {
+	    		color: blue;
+	    		background-color: transparent;
+	    		text-decoration: none;
+				}
+
+				.descriptions h3 > a:visited {
+	    		color: purple;
+	    		background-color: transparent;
+	    		text-decoration: none;
+				}
+
+				.descriptions h3 > a:hover {
+	    		color: orange;
+	    		background-color: transparent;
+	    		text-decoration: underline;
+				}
+
+				.descriptions h3 > a:active {
+	    		color: yellow;
+	    		background-color: transparent;
+	    		text-decoration: underline;
+				}
+
+		.features{
+			clear: both;
+			text-align: center;
+			height: 1024px;
+			width: 100vw;
+			margin:auto;
+			background-size: 100%;
+		}
+		.letterf{
+			padding-right: 15px;
+		}
+		.letterT{
+			padding-right: 15px;
+		}
+		.featurestitle h1{
+			color: #FD7400;
+			font-family: "HBM Serenity";
+			font-size: 95px;
+			font-weight: bold;
+			line-height: 110px;
+			letter-spacing: 8px;
+			width: 35%;
+			position: relative;
+			margin-top: 25%;
+			margin-left: 120%;
+			text-align: center;
+		}
+		.featureicons {
+			height: 75%;
+			width: 15%;
+			display: block;
+		}
+		.featureicons img{
+			padding-bottom: 20%;
+		}
+		.featuredesc{
+			height: 75%;
+			width: 35%;
+			color: #000000;
+			font-family: Baskerville;
+			font-size: 30px;
+			font-weight: 600;
+			line-height: 34px;
+		}
+		.featuredesc h4{
+			padding-bottom: 15%;
+		}
+	.featuredesc h3{
+		margin-top: 1%;
+		padding-bottom: .5%;
+	}
+		}
+		#iphoneapp{
+			position: relative;
+			clear: both;
+			height: 673.08px;
+			width: 628.84px;
+			float: right;
+		}
+
+
+.clear{
+	clear: both;
+}
+
+
+		.download{
+			text-align: center;
+			position: relative;
+			height: 760px;
+			width: 100vw;
+			background-image: url(/Users/jvntr/Documents/Stylesheet/first-dinner-party-inside-header.jpg);
+    	margin: auto;
+    	background-size: cover;
+			background-position: center;
+			background-color: rgba(0,67,88,.3);
+			background-blend-mode: overlay;
+			z-index: 0;
+		}
+		.footerdownloadbutton{
+			margin-top: -90%;
+			margin-left: 135%;
+		}
+		.footerdownloadbutton img{
+			height: 184px;
+			width: 250px;
+		}
+		.go-top img{
+			margin-top: 30px;
+			float: left;
+			position: sticky;
+		}
+		#calltoaction h1{
+			width: 33vw;
+			color: #FFFFFF;
+			font-family: "HBM Serenity";
+			font-size: 75px;
+			font-weight: bold;
+			letter-spacing: 4px;
+			line-height: 110px;
+			text-align: center;
+			margin: 10% 180%;
+			text-shadow: 1px 1px 0 #555,
+				-1px 1px 0 #555,
+				1px -1px 0 #555,
+				-1px -1px 0 #555,
+				0px 1px 0 #555,
+				0px -1px 0 #555,
+				-1px 0px 0 #555,
+				1px 0px 0 #555,
+				2px 2px 0 #555,
+				-2px 2px 0 #555,
+				2px -2px 0 #555,
+				-2px -2px 0 #555,
+				0px 2px 0 #555,
+				0px -2px 0 #555,
+				-2px 0px 0 #555,
+				2px 0px 0 #555,
+				1px 2px 0 #555,
+				-1px 2px 0 #555,
+				1px -2px 0 #555,
+				-1px -2px 0 #555,
+				2px 1px 0 #555,
+				-2px 1px 0 #555,
+				2px -1px 0 #555,
+				-2px -1px 0 #555;
+				}
+		#calltoaction h2{
+			width: 30vw;
+			color: #FFFFFF;
+			font-family: Baskerville;
+			font-size: 48px;
+			font-weight: bold;
+			letter-spacing: -1px;
+			line-height: 55px;
+			text-align: center;
+			margin: 55% 20%;
+			text-shadow: 1px 1px 0 #555,
+				-1px 1px 0 #555,
+				1px -1px 0 #555,
+				-1px -1px 0 #555,
+				0px 1px 0 #555,
+				0px -1px 0 #555,
+				-1px 0px 0 #555,
+				1px 0px 0 #555,
+				2px 2px 0 #555,
+				-2px 2px 0 #555,
+				2px -2px 0 #555,
+				-2px -2px 0 #555,
+				0px 2px 0 #555,
+				0px -2px 0 #555,
+				-2px 0px 0 #555,
+				2px 0px 0 #555,
+				1px 2px 0 #555,
+				-1px 2px 0 #555,
+				1px -2px 0 #555,
+				-1px -2px 0 #555,
+				2px 1px 0 #555,
+				-2px 1px 0 #555,
+				2px -1px 0 #555,
+				-2px -1px 0 #555;
+		}
+
+
+		footer {
+			height: 68px;
+			width: 100vw;
+			background-color: #004358;
+		}
+		footer h4{
+			height: 14px;
+			width: 349px;
+			color: #FFFFFF;
+			font-family: Arial;
+			font-size: 12px;
+			font-weight: bold;
+			letter-spacing: 2px;
+			line-height: 14px;
+			text-align: center;
+			margin-top: 1.5%;
+		}
+		#socialmedia img{
+			position: relative;
+			height: 55px;
+			width: 250px;
+			margin-top: 10px;
+			left: 280%;
+		}
+
+
+
+		@media (max-width: 600px) {
+			nav{
+					height: 50px
+			}
+			div.navcontent{
+				width: 40%;
+			}
+			div.navcontent ul > li > a{
+				font-size: 14px;
+				padding: 5px 5px 0px 5px;
+
+			}
+			.logo{
+				width: 40%;
+			}
+			.logo img{
+				display: none;
+			}
+			.hero h1{
+				font-size: 60px;
+				line-height: 70px;
+			}
+			.hero h2{
+				font-size: 20px;
+				line-height: 24px;
+			}
+			.hero button{
+				height: 50px;
+				width: 270px;
+				font-size: 14px;
+				margin-left: -15%;
+			}
+			#headerdownloadbutton{
+				display: none;
+			}
+			#go-top img{
+				height: 10%;
+				width: 9%;
+			}
+			.title{
+				height: 195px;
+				margin: 0% 5% 5% 5%;
+			}
+			.title h1{
+				font-size: 50px;
+				line-height: 50px;
+				margin-top: -15%;
+			}
+			.title h2{
+				font-size: 18px;
+				line-height: 24px;
+			}
+			.dieticons{
+				width: 100%;
+			}
+			.descriptions{
+				width: 100%;
+			}
+			.dieticons img{
+				height: 168px;
+				width: 279px;
+				margin: 0 0 0 40px;
+			}
+			.descriptions h3{
+				font-size: 16px;
+				line-height: 18px;
+				margin-left: 40px;
+				margin-right: 5%;
+			}
+			.featurestitle h1{
+				font-size: 60px;
+				line-height: 50px;
+				margin: 35% 5% 5% 50%;
+			}
+
+			.featureicons{
+				height: 500px;
+				width: 40%;
+			}
+			.featureicons img{
+				height: 200px;
+				width: 90px;
+				display: block;
+				padding-bottom: 50%;
+				margin-left: 22%;
+			}
+			.featuredesc{
+				height: 60%;
+				width: 100%;
+
+			}
+			.featuredesc h3{
+				width: 200px;
+				font-size: 18px;
+				line-height: 20px;
+			}
+			.featuredesc h4{
+				width: 200px;
+				font-size: 18px;
+				line-height: 20px;
+				padding-bottom: 40%;
+			}
+			#iphoneapp{
+				display: none;
+			}
+			.clear{
+				clear: both;
+			}
+			.footerdownloadbutton{
+				margin-top: -140%;
+				margin-left: 110%;
+			}
+			.footerdownloadbutton img{
+				height: 120px;
+				width: 180px;
+			}
+			#calltoaction h1{
+				font-size: 40px;
+				line-height: 40px;
+				margin-top: 65%;
+				margin-left: 140%;
+			}
+			#calltoaction h2{
+				font-size: 28px;
+				line-height: 30px;
+				margin-top: 100%;
+			}
+			footer h4{
+				width: 150px;
+				margin-top: 2%;
+				margin-left: 30px;
+			}
+			#socialmedia img{
+				left: 10%;
+				height: 40px;
+				width: 181px;
+			}
+
+		}
+
+	</style>
+<body>
+
+
+	<nav>
+			<div id="navcontent" class="navcontent">
+         <ul>
+           <li><a href="#about">About Us</a></li>
+           <li><a href="#features">Features</a></li>
+           <li><a href="#download">Contact Us</a></li>
+           <li><a href="#download">Help</a></li>
+         </ul>
+       </div>
+			 <div class=logo><img src= "/Users/jvntr/Documents/Stylesheet/logo.png"></script>
+			 </div>
+	</nav>
+
+	<div id="hero" class="hero fullheight">
+
+		<div style="display:flex" id="tom and jerry">
+		<div id="heromessage" class="heromessage">
+			<h1>
+					REDISCOVER THE JOY OF DINING OUT
+			</h1>
+			<h2>
+				DON'T LET DIETARY RESTRICTIONS RESTRICT YOUR FUN
+			</h2>
+			<a href="#about">
+			<button>
+				LEARN MORE
+			</button>
+		</a>
+		</div>
+		<div id="headerdownloadbutton">
+			<a href="#about">
+          <img src="Stylesheet/appstore-icon-mobile-retina.png" />
+      </a>
+		</div>
+	</div>
+</div>
+
+	<main>
+		<section id="about" class="about fullheight">
+			<div id="go-top" class="go-top">
+			<a href="#">
+				<img src="/Users/jvntr/Documents/Stylesheet/bact to top button.png"></script>
+			</a>
+		</div>
+			<div style="display:flex" id="ninja turtle">
+			<div id="title" class="title">
+				<h1>
+					BUILT TO HELP YOU DINE OUT WITH CON<span class="letterf">F</span>IDENCE
+				</h1>
+				<h2>
+					No more worrying about dining
+					out and not having any meal
+					choices that meet your dietary
+					needs.
+				</h2>
+			</div>
+		</div>
+			<div id="dieticons" class="dieticons">
+				<img src="Stylesheet/2014-15-Icons_Web.png"></script>
+			</div>
+			<div id="descriptions" class="descriptions">
+				<h3>
+					HappyMenu will let you know what
+					restaurants will cater to your
+					needs and let you know what meals
+					you can safely order.
+				</h3>
+				<h3>
+					Want the meals delivered to you?
+					HappyMenu supports in app
+					ordering and delivery from
+					participating restaurants.
+				</h3>
+				<h3>
+					Now available in both
+					the <a href="#download">Google Play Store</a>
+					and the <a href="#download">App Store</a>	.
+				</h3>
+			</div>
+		</div>
+		</div>
+		</section>
+
+		<section id="features" class="features fullheight">
+			<div style="display:flex" id="care bears">
+				<div class="featurestitle">
+			<h1>
+				<span class="letterf">F</span>EA<span class="letterf">T</span>URES
+			</h1>
+		</div>
+	</div>
+			<div style="display:flex" id="The Simpsons">
+
+			<div id="featureicons" class="featureicons">
+					<img src="/Users/jvntr/Documents/Stylesheet/Food Menu Icon.png" />
+					<img src="Stylesheet/Reservation Icon.png"></script>
+					<img src="Stylesheet/Delivery Icon.png"></script>
+			</div>
+			<div id="featuredesc" class="featuredesc">
+					<h3>
+						Color coded menus
+					</h3>
+					<h4>
+						Each dietary restriction is given a
+						specific color for easy recognition
+					</h4>
+					<h4>
+						App provides reservation options
+					</h4>
+					<h4>
+						In app delivery portal
+						(at participating restaurants)
+					</h4>
+			</div>
+			<div id="iphoneapp">
+				<img src="Stylesheet/iphone app.png"></script>
+			</div>
+		</div>
+		</section>
+
+		<section id="download" class="download fullheight">
+			<div style="display:flex" id="rick and morty">
+			<div id="footercontent" class="footercontent">
+				<div id="calltoaction">
+					<h1>
+						MAKE YOUR NEXT MEAL
+						A MEMORABLE ONE
+					</h1>
+					<h2>
+						Download our app
+						and join in on the fun!
+					</h2>
+					<div class="footerdownloadbutton">
+						<a href="#about">
+		          	<img src="Stylesheet/appstore-icon-mobile-retina.png" />
+		      	</a>
+					</div>
+				</div>
+		</div>
+	</div>
+		</section>
+	</main>
+
+	<footer>
+		<div style="display:flex" id="hey arnorld">
+		<h4>
+			Copyright © 2017 No Budget Productions
+		</h4>
+		<div id="socialmedia">
+			<img src="/Users/jvntr/Documents/Stylesheet/Social Media Icons.png" />
+		</div>
+	</div>
+	</div>
+	</footer>
+
+
+</body>
+</html>
